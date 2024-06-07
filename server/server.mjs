@@ -9,7 +9,7 @@ import connectDB from './configs/db.mjs'
 dotenv.config()
 
 const app = express()
-const PORT = process.env.PORT ||3000
+const PORT = 3030
 
 import participantsRoutes from './routes/participantsRoutes.mjs'
 import jwtRoutes from './routes/jwtRoutes.mjs'
