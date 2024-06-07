@@ -51,6 +51,10 @@ app.use('/auth', jwtRoutes)
 // app.use('/logs', logsRoutes);
 app.use('/admin', adminsRoutes);
 
+app.get('/hello-world', (req, res) => {
+  res.send('Hello, World!');
+  console.log('Hello World')
+});
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
